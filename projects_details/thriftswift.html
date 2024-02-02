@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - ThriftSwift - Coupon Saver</title>
+
+    <!-- Add your custom styles here -->
+    <style>
+        body {
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+            color: #fff; /* Change text color to white */
+            background: #010e1b;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 90%; /* Adjust max-width as needed */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align columns at the top */
+            flex-wrap: wrap; /* Allow columns to wrap to the next line on smaller screens */
+        }
+
+        .left-column,
+        .right-column {
+            width: 48%; /* Adjust as needed */
+            box-sizing: border-box; /* Include padding and border in the width calculation */
+            padding: 10px; /* Add padding to the columns */
+        }
+
+        .left-column {
+            text-align: right;
+            order: 2; /* Change the order for larger screens */
+            padding-right: 20px; /* Add padding to the right side of the left column */
+        }
+
+        .left-column h2 {
+            font-size: 44px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .right-column {
+            text-align: left;
+            order: 1; /* Change the order for larger screens */
+        }
+
+        .right-column img {
+            max-width: 100%;
+            height: auto;
+            max-height: 250px;
+            margin-top: 10px;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Align buttons to the right */
+            width: 100%; /* Make the container full width */
+            box-sizing: border-box; /* Include padding and border in the width calculation */
+            padding: 10px; /* Add padding to the container */
+        }
+
+        .btn-source-code,
+        .btn-view-project {
+            padding: 10px;
+            margin-top: -100px; /* Adjust the margin-top for the buttons */
+            background-color: rgba(28, 125, 50, 0.5);
+            color: #fff; /* Change button text color to white */
+            box-shadow: 0 0 1px white; /* Create a "border" with box-shadow */
+            cursor: pointer;
+            text-align: center; /* Center text within the button */
+            display: block; /* Make the buttons block-level elements */
+            width: 40%; /* Set width to fit content */
+            font-weight: bold; /* Make the text bold */
+            border-radius: 10px; /* Add border-radius for curved corners */
+        }
+
+        .right-column p:first-child,
+        .left-column h2,
+        .left-column p,
+        .right-column p {
+            font-weight: bold; /* Make the headings in the left column bold */
+        }
+
+        /* Media Query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .columns {
+                flex-direction: column; /* Reverse the order for smaller screens */
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%; /* Full width for smaller screens */
+                text-align: left;
+                order: 0; /* Reset the order for smaller screens */
+            }
+
+            .btn-container {
+                align-items: center; /* Center buttons for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Project Details Content without Slick Carousel -->
+    <div class="container">
+
+        <div class="columns">
+            <div class="left-column">
+                <h2>ThriftSwift [Google Extension]</h2>
+                <p>Elevate your online shopping experience with our Chrome Extension, integrating Firebase for effortless coupon management and quick access to savings while browsing.</p>
+            </div>
+
+            <div class="right-column">
+                <p>Firebase Integration:</p>
+                <p>Discover how ThriftSwift seamlessly integrates with Firebase to streamline coupon management and access.</p>
+                <br>
+                <img src="../imgs/everlanecoupon.png" alt="Interactive">
+                <p>Data-Driven Approach:</p>
+                <p>See how ThriftSwift adopts a data-driven approach, utilizing Firebase to optimize coupon storage and retrieval.</p>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button onclick="window.location.href='https://github.com/mrsaiduck/ThriftSwift-Coupon-Saver'" class="btn-source-code">Source Code</button>
+            <button onclick="alert('To run the project locally, follow the instructions in the README.md file provided in the source code.')" class="btn-view-project">Run Locally</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
